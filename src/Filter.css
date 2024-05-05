@@ -1,0 +1,74 @@
+.filter-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-color: transparent;
+    padding: 0 20px 20px;
+    background-color: #fff !important;
+}
+.company-filter-container{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #ccc !important;
+    vertical-align: top;
+    border-radius: 4px;
+
+}
+
+.company-filter{
+    /* font-family: __LexendFont_7838d2, __LexendFont_Fallback_7838d2; */
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    height: 36px !important;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.company-filter > input{
+    flex: 1 1;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 95%, .4);
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+
+.filters{
+    margin: 2px 5px 2px 0 !important;
+}
+
+.group-styles{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+}
+.groupBadgeStyles{
+    background-color: '#EBECF0';
+  border-radius: '2em';
+  color: '#172B4D';
+  display: 'inline-block';
+  font-size: 12;
+  font-weight: 'normal';
+  line-height: '1';
+  min-width: 1;
+  padding: '0.16666666666667em 0.5em';
+  text-align: 'center';
+}
