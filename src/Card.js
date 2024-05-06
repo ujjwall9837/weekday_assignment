@@ -1,10 +1,22 @@
 import React from "react";
 import "./Card.css";
 import AvatarIcon from "./avatar.svg";
-export default function Card({jd}) {
-  const {jdLink,logoUrl,companyName,jobDetailsFromCompany,jobRole,location,maxExp,maxJdSalary,minExp,minJdSalary,salaryCurrencyCode}=jd
+export default function Card({ jd }) {
+  const {
+    jdLink,
+    logoUrl,
+    companyName,
+    jobDetailsFromCompany,
+    jobRole,
+    location,
+    maxExp,
+    maxJdSalary,
+    minExp,
+    minJdSalary,
+    salaryCurrencyCode,
+  } = jd;
   return (
-    <div>
+    <div style={{ padding: "2rem" }}>
       <div className="card-body">
         <div className="card-body1">
           <div className="posted-header-container">
@@ -24,7 +36,9 @@ export default function Card({jd}) {
               <p className="cards-sub-text">{location}</p>
             </div>
             <p>
-              Estimated Salary salary{" "}
+              Estimated Salary: {salaryCurrencyCode}{" "}
+              {minJdSalary && maxJdSalary ? `${minJdSalary}-` : minJdSalary}
+              {maxJdSalary}
               <span
                 aria-label="Estimated by Weekday. Not provided by employer"
                 class=""
